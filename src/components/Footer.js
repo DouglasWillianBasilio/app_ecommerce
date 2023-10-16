@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { AiOutlineYoutube, AiOutlineWhatsApp, AiOutlineInstagram } from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -32,11 +33,19 @@ const Footer = () => {
           <div className='row'>
             <div className='col-4'>
               <h4 className='text-white mb-4'>Contact US</h4>
-              <div className='footer-links d-flex flex-column'>
-                <Link className='text-white py-2 mb-1'>Demo Store</Link>
-                <Link className='text-white py-2 mb-1'>No. 1259 Freedom, New York</Link>
-                <Link className='text-white py-2 mb-1'>+91-987654321</Link>
-                <Link className='text-white py-2 mb-1'>Demo@Exampledemo.com</Link>
+              <address className='text-white fs-6'>No : 277 Near Vill chopal, <br />
+                Sonipat, Haryana <br />
+                PinCode: 131103
+              </address>
+              <a href='tel:+91 8264954234' className='mt-3 d-block mb-1 text-white'>+91 8264954234
+              </a>
+              <a href='mailto: navdeepdahiya753@example.com' className='mt-3 d-block mb-0 text-white'>navdeepdahiya753@example.com
+              </a>
+
+              <div className='social_icons d-flex -align-items-center gap-30 mt-4'>
+                <a className='text-white' href='#'> <AiOutlineYoutube className='fs-3' /> </a>
+                <a className='text-white' href='#'> <AiOutlineInstagram className='fs-3' /> </a>
+                <a className='text-white' href='#'> <AiOutlineWhatsApp className='fs-3' /> </a>
               </div>
             </div>
             <div className='col-3'>
