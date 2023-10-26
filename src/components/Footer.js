@@ -43,9 +43,9 @@ const Footer = () => {
               </a>
 
               <div className='social_icons d-flex -align-items-center gap-30 mt-4'>
-                <a className='text-white' href='#'> <AiOutlineYoutube className='fs-3' /> </a>
-                <a className='text-white' href='#'> <AiOutlineInstagram className='fs-3' /> </a>
-                <a className='text-white' href='#'> <AiOutlineWhatsApp className='fs-3' /> </a>
+                <a className='text-white' href=''> <AiOutlineYoutube className='fs-3' /> </a>
+                <a className='text-white' href=''> <AiOutlineInstagram className='fs-3' /> </a>
+                <a className='text-white' href=''> <AiOutlineWhatsApp className='fs-3' /> </a>
               </div>
             </div>
             <div className='col-3'>
