@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProduct from '../components/SpecialProduct';
 
 const Home = () => {
   return (
@@ -213,6 +214,93 @@ const Home = () => {
             <div className='col-12'>
               <h3 className='section-heading'>Features Collection</h3>
             </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      <section className='famous-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+          <h3 className='section-heading'>Produtos Famosos</h3>
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src='images/watch.jpg'
+                  className='img-fluid'
+                  alt='laptopIMG' />
+                <div className='famous-content position-absolute'>
+                  <h5>IMAGEM PRETA</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $399or $16,62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src='images/watch.jpg' className='img-fluid' alt='laptopIMG' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>TELEVISORES</h5>
+                  <h6 className='text-dark'>Smart Watch Series 7</h6>
+                  <p className='text-dark'>From $399or $16,62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src='images/watch.jpg' className='img-fluid' alt='laptopIMG' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>CONTROLES</h5>
+                  <h6 className='text-dark'>Smart Watch Series 7</h6>
+                  <p className='text-dark'>From $399or $16,62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src='images/watch.jpg' className='img-fluid' alt='laptopIMG' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>PLACAS</h5>
+                  <h6 className='text-dark'>Smart Watch Series 7</h6>
+                  <p className='text-dark'>From $399or $16,62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section >
+
+      <section className='spacial-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Special Products</h3>
+            </div>
+          </div>
+          <div className='row gap-5'>
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+
+      <section className='popular-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Our Popular Products</h3>
+            </div>
+
+          </div>
+          <div className='row'>
             <ProductCard />
             <ProductCard />
             <ProductCard />

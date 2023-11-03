@@ -12,7 +12,7 @@
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
-  --corlo-1c1b1b: #1c1b1b;
+  --color-1c1b1b: #1c1b1b;
 }
 .section-heading {
   font-size: 26px;
@@ -41,6 +41,9 @@ a {
   border-color: inherit;
 }
 
+.gap-5 {
+  gap: 5px;
+}
 .gap-10 {
   gap: 10px;
 }
@@ -304,7 +307,7 @@ footer .input-group-text {
 
 .blog-content h5 {
   font-size: 18px;
-  color: var(--corlo-1c1b1b);
+  color: var(--color-1c1b1b);
 }
 
 .blog-content p.desc {
@@ -362,12 +365,12 @@ footer .input-group-text {
 
 .product-card .product-details h5 {
   font-size: 15px;
-  color: var(--corlo-1c1b1b);
+  color: var(--color-1c1b1b);
 }
 
 .product-card .product-details p.price {
   font-size: 16px;
-  color: var(--corlo-1c1b1b);
+  color: var(--color-1c1b1b);
 }
 
 .action-bar {
@@ -382,3 +385,98 @@ footer .input-group-text {
 }
 
 /* Product Card End */
+
+
+
+
+/* Special Product */
+
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Special Product End */
+
+/* Famous card */
+
+.famous-card .famous-content {
+  top: 10%;
+  left: 5%;
+}
+
+.famous-card img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+.famous-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: red;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.famous-content h6 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: red;
+}
+
+/* Famous card end */
+
+
+/* Sua loja */
+
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+
+}
+
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1b1b);
+  margin-bottom: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-3b4149);
+  cursor: pointer;
+}
+
+.filter-card .form-check-input:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+
+.filter-card .form-check-input:checked {
+  background-color: var(--color-131921);
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1b1b);
+  margin-bottom: 15px;
+}
+
+/* Sua loja fim */
+
