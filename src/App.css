@@ -464,11 +464,12 @@ footer .input-group-text {
 
 .filter-card .form-check-input:focus {
   box-shadow: none;
-  border-color: inherit;
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
 .filter-card .form-check-input:checked {
   background-color: var(--color-131921);
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
 .sub-title {
@@ -476,6 +477,21 @@ footer .input-group-text {
   font-weight: 600;
   color: var(--color-1c1b1b);
   margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.colors {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 /* Sua loja fim */
