@@ -14,15 +14,15 @@ const Home = () => {
             <div className='col-6'>
               <div className='main-banner position-relative'>
                 <img
-                  src='/images/main-banner-1.jpg'
+                  src='/images/painel-tv.jpg'
                   className='img-fluid rounded-3'
                   alt='mainBanner' />
 
                 <div className='main-banner-content position-absolute'>
-                  <h4> SUPERCHARGED FOR PROS. </h4>
-                  <h5>iPad S13+ Pro.</h5>
-                  <p>From $999.00 or $41.62/mo.</p>
-                  <Link className='button'> BUY NOW </Link>
+                  <h4> TELEVISORES </h4>
+                  <h5>A partir de R$ 650</h5>
+                  <p>Em ate 3x sem Juros</p>
+                  <Link className='button'> COMPRAR AGORA </Link>
                 </div>
               </div>
             </div>
