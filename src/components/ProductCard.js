@@ -27,6 +27,7 @@ const ProductCard = (props) => {
                         edit={false}
                         activeColor="#bf4800"
                     />
+                    <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>O Smartwatch X2 é mais do que apenas um relógio inteligente; é uma extensão do seu estilo de vida ativo e conectado.</p>
                     <p className='price'>$100.00</p>
                 </div>
                 <div className='action-bar position-absolute'>
@@ -38,7 +39,7 @@ const ProductCard = (props) => {
                 </div>
             </Link>
         </div>
-        <div className={` ${location.pathname == '/store' ? `col-${grid}` : 'col-3'}`} >
+        <div className={` ${location.pathname == '/store' ? `gr-${grid}` : 'col-3'}`} >
             <Link className='product-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
                     <Link> <img src='images/wish.svg' alt='wishIMG' /> </Link>
@@ -57,6 +58,7 @@ const ProductCard = (props) => {
                         edit={false}
                         activeColor="#bf4800"
                     />
+                    <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>O Smartwatch X2 é mais do que apenas um relógio inteligente; é uma extensão do seu estilo de vida ativo e conectado.</p>
                     <p className='price'>$100.00</p>
                 </div>
                 <div className='action-bar position-absolute'>
