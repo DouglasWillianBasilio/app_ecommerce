@@ -225,7 +225,7 @@ const Home = () => {
       <section className='famous-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
-          <h3 className='section-heading'>Produtos Famosos</h3>
+            <h3 className='section-heading'>Produtos Famosos</h3>
             <div className='col-3'>
               <div className='famous-card position-relative'>
                 <img src='images/watch.jpg'
@@ -336,10 +336,21 @@ const Home = () => {
             <div className='col-12'>
               <h3 className='section-heading'>Our Latest Blogs</h3>
             </div>
+
+          </div>
+          <div className='row'>
+            <div className='col-3'>
             <BlogCard />
+            </div>
+            <div className='col-3'>
             <BlogCard />
+            </div>
+            <div className='col-3'>
             <BlogCard />
+            </div>
+            <div className='col-3'>
             <BlogCard />
+            </div>
           </div>
         </div>
       </section>
