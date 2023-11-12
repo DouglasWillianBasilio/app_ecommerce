@@ -611,4 +611,32 @@ footer .input-group-text {
 .contact-inner-wrapper ul li .icons {
   margin: 10px;
 }
+
 /* Contato Fim */
+
+
+
+/* Compare products */
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px; 
+}
+
+.compare-product-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.compare-product-details h5 .title{
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1b1b);
+}
+
+/* Compare products fim */
