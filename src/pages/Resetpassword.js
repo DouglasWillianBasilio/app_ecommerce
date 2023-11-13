@@ -3,13 +3,13 @@ import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import { Link } from 'react-router-dom';
 
-const Signup = () => {
-  return (
-    <>
-      <Meta title={"Sign Up"} />
-      <BreadCrumb title='Account' />
+const Resetpassword = () => {
+    return (
+        <>
+            <Meta title={"Reset"} />
+            <BreadCrumb title='Account' />
 
-      <div className='login-wrapper home-wrapper-2 py-5'>
+            <div className='login-wrapper home-wrapper-2 py-5'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='auth-card'>
@@ -54,8 +54,8 @@ const Signup = () => {
                 </div>
 
             </div>
-    </>
-  )
+        </>
+    )
 }
 
-export default Signup;
+export default Resetpassword;

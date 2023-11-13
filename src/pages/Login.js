@@ -13,14 +13,15 @@ const Login = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='auth-card'>
-                            <h3>Login</h3>
-                            <form action=''>
+                            <h3 className='text-center mb-3'>Login</h3>
+                            <form action=''
+                            className='d-flex flex-column gap-15'>
                                 <div>
                                     <input type='email'
                                         name='email'
                                         placeholder='Email' className='form-control' />
                                 </div>
-                                <div>
+                                <div className='mt-1'>
                                     <input type='password'
                                         name='password'
                                         placeholder='Password' className='form-control' />
@@ -29,9 +30,11 @@ const Login = () => {
                                 <div>
                                     <Link to='/forgot-password'>Forgot Password?</Link>
 
-                                    <div className='d-flex justify-content-center gap-15 align-items-center'>
-                                        <button className='button border-0'>Login</button>
-                                        <Link className='button signup'>SignUp</Link>
+                                    <div className='
+                                    mt-3 
+                                    d-flex justify-content-center gap-15 align-items-center'>
+                                        <button className='button border-0' type='submit'>Login</button>
+                                        <Link to='/signup' className='button signup'>SignUp</Link>
                                     </div>
                                 </div>
                             </form>
@@ -44,4 +47,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Login;
