@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Color = () => {
     return (
@@ -13,4 +13,4 @@ const Color = () => {
     )
 }
 
-export default Color
+export default Color;
