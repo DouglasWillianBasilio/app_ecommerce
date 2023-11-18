@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import ProductCard from '../components/ProductCard';
@@ -6,7 +6,8 @@ import ReactStars from "react-rating-stars-component";
 
 
 const SingleProduct = () => {
-    
+    const [orderedProduct, setorderedProduct] = useState(true);
+
     return (
         <>
             <Meta title={'Product Names'} />
@@ -38,25 +39,27 @@ const SingleProduct = () => {
                 <div className='container-xxl'>
                     <div className='row'>
                         <div className='col-12'>
-                            <div className='review-head d-flex justify-content-between align-items-end'>
-                                <div>
-                                    <h4 className='mb-2'>Customer Reviews</h4>
-                                    <div className='d-flex align-items-center gap-10'>
-                                        <ReactStars
-                                            count={5}
-                                            size={24}
-                                            value={4}
-                                            edit={false}
-                                            activeColor="#bf4800"
-                                        />
-                                        <p className='mb-0'>Based on 2 Review</p>
-                                    </div>
-                                </div>
-
-                                <div>
+                            <div className='review-inner-wrapper'>
+                                <div className='review-head d-flex justify-content-between align-items-end'>
                                     <div>
-                                        <a href=''> Write a Review </a>
+                                        <h4 className='mb-2'>Customer Reviews</h4>
+                                        <div className='d-flex align-items-center gap-10'>
+                                            <ReactStars
+                                                count={5}
+                                                size={24}
+                                                value={4}
+                                                edit={false}
+                                                activeColor="#bf4800"
+                                            />
+                                            <p className='mb-0'>Based on 2 Review</p>
+                                        </div>
                                     </div>
+
+                                    {orderedProduct && (
+                                        <div>
+                                            <a className='text-dark text-decoration-underline' href=''> Write a Review </a>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>

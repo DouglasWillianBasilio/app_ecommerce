@@ -742,4 +742,29 @@ footer .input-group-text {
   padding: 30px;
 }
 
-/* Policy Pages fim*/
+/* Policy Pages fim */
+
+
+
+
+/* Main Product page */
+
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.review-head h4 {
+
+}
+
+.review-head p {
+  
+}
+
+/* Main Product page end */
