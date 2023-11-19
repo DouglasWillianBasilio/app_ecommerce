@@ -3,9 +3,18 @@ import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
+import ReactImageZoom from 'react-image-zoom';
+
 
 
 const SingleProduct = () => {
+    const props = {
+        width: 400,
+        height: 500,
+        zoomWidth: 500,
+        img: "https://i.zst.com.br/thumbs/12/27/2f/-866175892.jpg"
+    };
+
     const [orderedProduct, setorderedProduct] = useState(true);
 
     return (
@@ -16,7 +25,21 @@ const SingleProduct = () => {
             <div className='main-product-wrapper py-5 home-wrapper-2'>
                 <div className='container-xxl'>
                     <div className='row'>
-                        <div className='col-6'></div>
+                        <div className='col-6'>
+                            <div className='main-product-image'>
+                                <div>
+                                    <ReactImageZoom {...props} />
+                                </div>
+                            </div>
+
+                            <div className='other-product-images d-flex flex-wrap gap-15'>
+                                <div> <img src='/images/watch.jpg' alt='watch' /> </div>
+                                <div> <img src='/images/watch.jpg' alt='watch' /> </div>
+                                <div> <img src='/images/watch.jpg' alt='watch' /> </div>
+                                <div> <img src='/images/watch.jpg' alt='watch' /> </div>
+                            </div>
+
+                        </div>
                         <div className='col-6'></div>
                     </div>
                 </div>
@@ -24,10 +47,11 @@ const SingleProduct = () => {
 
             <div className='description-wrapper py-5 home-wrapper-2'>
                 <div className='container-xxl'>
-                    <div className='container-row'>
+                    <div className='row'>
                         <div className='col-12'>
+                            <h3>Description</h3>
                             <div className='bg-white p-3'>
-                                <h4>Description</h4>
+
                                 <p>Aqui precisa ter alguma coisa escrita xD</p>
                             </div>
                         </div>
@@ -35,10 +59,11 @@ const SingleProduct = () => {
                 </div>
             </div>
 
-            <section className='reviews-wrapper py-5 home-wrapper-2'>
+            <section className='reviews-wrapper home-wrapper-2'>
                 <div className='container-xxl'>
                     <div className='row'>
                         <div className='col-12'>
+                            <h4>Reviews</h4>
                             <div className='review-inner-wrapper'>
                                 <div className='review-head d-flex justify-content-between align-items-end'>
                                     <div>
@@ -61,6 +86,53 @@ const SingleProduct = () => {
                                         </div>
                                     )}
                                 </div>
+                                <div className='review-form py-4'>
+                                    <h4 className='mb-2'>Write a Review</h4>
+                                    <form action='' className='d-flex flex-column gap-15'>
+                                        <div>
+                                            <ReactStars
+                                                count={5}
+                                                size={24}
+                                                value={4}
+                                                edit={true}
+                                                activeColor="#bf4800"
+                                            />
+                                        </div>
+
+
+                                        <div>
+                                            <textarea
+                                                name=''
+                                                id=''
+                                                className='w-100 form-control'
+                                                cols='38'
+                                                rows='4'
+                                                placeholder='Menssagem'
+                                            ></textarea>
+                                        </div>
+
+                                        <div className='d-flex justify-content-end'>
+                                            <button className='button'>Enviar Review</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div className='reviews mt-4'>
+                                    <div className='review'>
+                                        <div className='d-flex gap-10 align-items-center'>
+                                            <h6 className='mb-0'>Navdeep</h6>
+                                            <ReactStars
+                                                count={5}
+                                                size={24}
+                                                value={4}
+                                                edit={false}
+                                                activeColor="#bf4800"
+                                            />
+                                        </div>
+                                        <p className='mt-3'>aqui precisa ter algo escrito. no caso seria uma avaliacao</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
