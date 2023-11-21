@@ -4,12 +4,24 @@ import BreadCrumb from '../components/BreadCrumb';
 import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
 import Color from '../components/Color';
+import { TbGitCompare } from "react-icons/tb";
+import { FaGrinHearts } from "react-icons/fa";
 
 
 
 const SingleProduct = () => {
 
     const [orderedProduct, setorderedProduct] = useState(true);
+
+    const copyToClipboard = (text) => {
+        console.log('text', text)
+        var textField = document.createElement('textarea')
+        textField.innerText = text
+        document.body.appendChild(textField)
+        textField.select()
+        document.execCommand('copy')
+        textField.remove()
+      };
 
     return (
         <>
@@ -54,7 +66,7 @@ const SingleProduct = () => {
                                     <a className='review-btn' href='#review'>Write a Review</a>
                                 </div>
 
-                                <div className='border-bottom py-3'>
+                                <div className=' py-3'>
                                     <div className='d-flex gap-10 align-items-center my-2'>
                                         <h3 className='product-heading'>Type :</h3>
                                         <p className='product-data'>Watch</p>
@@ -107,12 +119,29 @@ const SingleProduct = () => {
                                     </div>
                                     <div className='d-flex align-items-center gap-15'>
                                         <div>
-                                            <a href=''>Add to Compare</a>
+                                            <a href=''> <TbGitCompare className='fs-5 me-2' /> Add to Compare</a>
                                         </div>
                                         <div>
-                                            <a href=''>Add to Wishlist</a>
+                                            <a href=''> <FaGrinHearts className='fs-5 me-2' /> Add to Wishlist</a>
                                         </div>
                                     </div>
+
+                                    <div className='d-flex gap-10 flex-column my-3'>
+                                        <h3 className='product-heading'>Shipping & Returns :</h3>
+                                        <p className='product-data'>Free shipping and return available on all orders! <br /> We ship all US domestic orders within <b>5-10 business days!</b></p>
+                                    </div>
+
+                                    <div className='d-flex gap-10 align-items-center my-3'>
+                                        <h3 className='product-heading'>Product Link:</h3>
+                                        <a 
+                                            href='javascript:void(0);' 
+                                            onClick={() => {
+                                            copyToClipboard('https://m.media-amazon.com/images/I/618EkNhcilL._AC_SY350_.jpg');
+                                        }}>
+                                            Copy Product Link
+                                        </a>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
