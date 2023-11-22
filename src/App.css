@@ -802,7 +802,7 @@ footer .input-group-text {
 }
 
 .main-product-image {
-  padding: 30px;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
   
@@ -833,7 +833,7 @@ footer .input-group-text {
 
 
 .main-product-details {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: white;
   border-radius: 10px;
 }
